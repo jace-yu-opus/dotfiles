@@ -1,0 +1,57 @@
+# Taps
+tap "homebrew/bundle"
+
+# Binaries
+brew "coreutils"
+brew "gh"
+brew "git"
+brew "git-delta"
+brew "htop"
+brew "imagemagick"
+brew "jq"
+brew "mas"
+brew "nvm"
+brew "pyenv"
+brew "pyenv-virtualenv"
+brew "shellcheck"
+brew "temporal"
+brew "tldr"
+brew "tree"
+brew "wget"
+brew "yq"
+
+# Apps
+cask "1password"
+cask "alt-tab"
+cask "arc"
+cask "appcleaner"
+cask "chatgpt"
+cask "cheatsheet"
+cask "docker"
+cask "easydict"
+cask "google-cloud-sdk"
+cask "hiddenbar"
+cask "iina"
+cask "lark"
+cask "mongodb-compass"
+cask "monitorcontrol"
+cask "postman"
+cask "raycast"
+cask "rewind"
+cask "the-unarchiver"
+cask "visual-studio-code"
+cask "warp"
+
+# Quicklook
+cask "provisionql"
+cask "qlimagesize"
+cask "qlmarkdown"
+cask "qlvideo"
+cask "quicklook-json"
+cask "quicklookapk"
+cask "webpquicklook"
+
+# Mac App Store
+mas "Ulysses", id: 1225570693
+mas "Xcode", id: 497799835
+mas "微信", id: 836500024
