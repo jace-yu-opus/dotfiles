@@ -16,3 +16,6 @@ source ~/.oh-my-zsh/plugins/git/git.plugin.zsh
 source ~/.oh-my-zsh/plugins/z/z.plugin.zsh
 
 source ~/.non_public_commands.sh
+
+alias gbdd="git branch | grep -vF "main" | xargs git branch -D"
+alias godd="find . -type f -name '*.orig' -delete"
