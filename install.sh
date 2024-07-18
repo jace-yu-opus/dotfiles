@@ -11,9 +11,19 @@ fi
 ln -s "$DOTFILES"/.vimrc "$VIMRC"
 
 if [ "$(uname)" = "Darwin" ]; then
+  echo "🍉 Setting up mac"
+  # shellcheck source=/dev/null
   . "$DOTFILES"/macos/install.sh
 fi
 
+echo "🍉 Setting up zsh"
+NPC="$HOME/.non_public_commands.sh"
+echo "🍉     Setting up non publich commands"
+if [ -f "$NPC" ]; then
+  rm "$NPC"
+fi
+ln -s "$DOTFILES"/zsh/.non_public_commands.sh "$NPC"
+# shellcheck source=/dev/null
 . "$DOTFILES"/zsh/install.sh
 
 echo "🍉 Setting up git"
@@ -23,9 +33,3 @@ if [ -f "$GITCONFIG" ]; then
 fi
 ln -s "$DOTFILES"/.gitconfig "$GITCONFIG"
 
-MAGICNUMBER="$HOME/.magicnumber"
-echo "🍉 Setting up magic numbers"
-if [ -f "$MAGICNUMBER" ]; then
-  rm "$MAGICNUMBER"
-fi
-ln -s "$DOTFILES"/.magicnumber "$MAGICNUMBER"

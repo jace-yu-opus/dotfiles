@@ -15,4 +15,4 @@ source ~/.oh-my-zsh/lib/git.zsh
 source ~/.oh-my-zsh/plugins/git/git.plugin.zsh
 source ~/.oh-my-zsh/plugins/z/z.plugin.zsh
 
-source ~/.magicnumber
+source ~/.non_public_commands.sh

@@ -1,5 +1,4 @@
 #!/bin/sh
-echo "🍉 Setting up mac"
 MACOS_FOLDER="$HOME/dotfiles/macos"
 
 echo "🍉     Setting up brew"

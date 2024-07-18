@@ -1,5 +1,4 @@
 #!/bin/sh
-echo "🍉 Setting up zsh"
 ZSH_DIR="$HOME/dotfiles/zsh"
 
 echo "🍉   Setting up oh-my-zsh"
